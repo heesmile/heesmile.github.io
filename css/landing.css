@@ -1,0 +1,96 @@
+div {
+  box-sizing : border-box;
+}
+body {
+  margin : 0;
+}
+html {
+  line-height : 1.15; /*기본 행간 높이*/
+}
+
+.intro-background {
+  background: rgb(7,0,133);
+  background: linear-gradient(0deg, rgba(7,0,133,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  height: 550px;
+  padding: 30px;
+  padding-bottom: 0;
+  color: white; 
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  /* height: 100%; */
+  margin: auto;
+}
+.main-text {
+  float: left;
+  margin-top: 50px;
+  line-height: 40px;
+}
+
+.main-iphone {
+  width: 400px;
+  float: right;
+  margin-top: 85px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 12px 36px;
+  border: none;
+  border-radius: 5px;  
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
+}
+
+.btn:active {
+  color:#333333;
+}
+
+.btn-black {
+  background-color: #979393;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  .main-iphone {
+    width: 260px;
+    display: block;
+    float: none;
+    margin: auto;
+  }
+  .main-text {
+    float: none;
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+
+progress {
+  /*기본 배경은 없애주는게 좋습니다*/
+  -webkit-appearance: none;
+  -moz-appearance : none;
+  appearance: none;
+  background: white;
+/* IE10 호환성용 */
+  color: red;
+}
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+}
+progress::-webkit-progress-value {
+  background-color: red;
+  border-radius: 2px;
+}
+
+/*파이어폭스 호환성을 위해*/
+progress::-moz-progress-bar {
+  background-color: red;
+  border-radius: 2px;
+}
